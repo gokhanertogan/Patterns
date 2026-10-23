@@ -14,6 +14,9 @@ namespace AbstractFactory
 
             Publisher<BlogTwitterPublishFactoy> twitterPublisher = new Publisher<BlogTwitterPublishFactoy>("Bir blog");
 
+            fbpublisher.Release();
+            twitterPublisher.Release();
+
             Console.ReadLine();
         }
     }
